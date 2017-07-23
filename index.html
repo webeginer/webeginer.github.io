@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://webeginer.github.io/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Владимир Семёнов - вёрстка сайтов на HTML и CSS">
+    <meta property="og:title" content="Вёрстка сайтов на HTML и CSS из PSD файлов - Владимир Семёнов">
     <meta property="og:image" content="">
     <meta property="og:description" content="Закажите вёрстку сайта без посредников от 5 000 рублей">
     <meta property="og:site_name" content="Портфолио верстальщика">
     <meta property="article:author" content="Владимир Семёнов">
     <title>Вёрстка сайтов на HTML и CSS из PSD файлов</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!--[if lt IE 9]>
@@ -21,65 +21,62 @@
     <![endif]-->
   </head>
   <body>
-    <div class="main" id="main-scroll">
+    <header class="firstscreen" id="main-scroll">
       <div class="wrapper">
-        <div class="main-header">
-        <h1>Вёрстка сайтов на HTML и CSS<br>
-            из PSD файлов</h1>
-        <div class="main-line"></div>
-        <p>Владимир Семёнов</p>
+        <div class="firstscreen-content">
+        <h1 class="firstscreen-content__title">Вёрстка сайтов на HTML и CSS из PSD файлов</h1>
+        <p class="firstscreen-content__autorname">Владимир Семёнов</p>
       </div>
       </div>
-      <a href="#myportfolio" class="main-down"></i></a>
-    </div>
-    <div class="portfolio" id="myportfolio">
+      <a class="firstscreen-content__link" href="#myportfolio"></a>
+    </header>
+    <main class="portfolio" id="myportfolio">
       <div class="container">
-        <h2 class="section-header">Портфолио</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="portfolio-block">
-              <img src="img/portfolio/1.jpg" width="360" height="240" alt="Работа №1">
-              <a href="https://webeginer.github.io/device/">Смотреть работу</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="portfolio-block">
-              <img src="img/portfolio/1.jpg" width="360" height="240" alt="Работа №2">
-              <a href="https://webeginer.github.io/device/">Смотреть работу</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="portfolio-block">
-              <img src="img/portfolio/1.jpg" width="360" height="240" alt="Работа №3">
-              <a href="https://webeginer.github.io/device/">Смотреть работу</a>
-            </div>
-          </div>
-        </div>
+        <h2 class="portfolio__title">Портфолио</h2>
+        <ul class="portfolio__list row">
+          <li class="portfolio__work col-4">
+            <img src="img/portfolio/1.jpg" width="360" height="240" alt="Работа №1">
+            <a href="https://webeginer.github.io/device/">Смотреть работу</a>
+          </li>
+          <li class="portfolio__work col-4">
+            <img src="img/portfolio/1.jpg" width="360" height="240" alt="Работа №1">
+            <a href="https://webeginer.github.io/device/">Смотреть работу</a>
+          </li>
+          <li class="portfolio__work col-4">
+            <img src="img/portfolio/1.jpg" width="360" height="240" alt="Работа №1">
+            <a href="https://webeginer.github.io/device/">Смотреть работу</a>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <strong>Владимир Семёнов</strong>
-            <p class="town"><sm>Ханты-Мансийск</sm></p>
+    </main>
+    <footer class="footer-content">
+      <div class="container row">
+          <div class="footer-content__aboutme col-3">
+            <p class="autor"><strong>Владимир Семёнов</strong></p>
+            <p class="town">Ханты-Мансийск</p>
             <p class="profession">Вёрстка сайтов</p>
           </div>
-          <div class="col-md-6">
-            <strong>Оставить сообщение</strong>
-            <div class="social-links">
-              <a href="https://vk.me/vsemphotographer"><i class="icon-vk"></i></a>
-              <a href="#"><i class="icon-facebook"></i></a>
-              <a href="#"><i class="icon-twitter"></i></a>
-            </div>
+          <div class="footer-content__social col-6">
+            <p class="message"><strong>Всегда на связи</strong></p>
+            <ul>
+              <li>
+                <a class="social-button social-button-vk" href="https://vk.me/vsemphotographer">ВКонтакте</a>
+              </li>
+              <li>
+                <a class="social-button social-button-skype" href="skype:photovsem86?call">Скайп</a>
+              </li>
+              <li>
+                <a class="social-button social-button-telegram" href="https://telegram.me/photovsem">Телеграм</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-3">
-            <strong>+7(904)882-4295</strong>
-            <a class="offer-button" data-toggle="modal" data-work="work-3" href="mailto:provsem.hm@yandex.ru ?subject=Вопрос по вёрстке сайта">Задать вопрос</a>
+          <div class="footer-content__contacts col-3">
+            <p class="phone"><strong>+7(904)882-4295</strong></p>
+            <a class="offer-button" href="mailto:provsem.hm@yandex.ru">Задать вопрос</a>
           </div>
-        </div>
+
       </div>
-    </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
